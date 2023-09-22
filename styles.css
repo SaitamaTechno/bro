@@ -1,0 +1,46 @@
+
+body {
+    background-image: url("images/brothers.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: 0px 0px;
+    display: flex;
+    align-items: center;
+    height: 45vh;
+    flex-direction: column;
+}
+h1 {
+    text-align: center;
+    background-color: yellow;
+}
+h2 {
+    text-align: center;
+    background-color: yellow;
+}
+
+label{
+    margin-bottom: 5px;
+    font-size: 27px;
+    font-weight: bold;
+    float: center;
+    clear: both;
+    background-color: yellow;
+}
+button[id="citybtn"], button[id="countrybtn"], button[id="ispbtn"]{
+    margin: 0 auto;
+    font-size: 25px; /* added */
+    background-color: pink; /* added */
+    color: blue; /* added */
+    padding: 7px; /* added */
+    display: flex; /* added */
+    justify-content: center;
+	float: left;
+    margin-left: 10px;
+}
+button[id="citybtn"]:hover, button[id="countrybtn"]:hover, button[id="ispbtn"]:hover {
+    transform: scale(1.10); /* increase size by 5% */
+    background-color: yellow; /* change background color */
+    transition: all 0.3s ease-in-out; /* add smooth transition */
+}
