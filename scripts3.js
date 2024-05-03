@@ -27,7 +27,7 @@ function read_file(file){
     //const yArray = [7,8,8,9,9,9,10,11,14,14,15];
     //console.log(js)
     const dls=read_file("PDO.json")
-    const dly=read_file("PDI.json")
+    const dly=read_file("PCN.json")
     const fark_list=[]
     for(var i=0; i<dls.close.length; i++){
       fark=dly.close[i]-dls.close[i]
@@ -47,8 +47,8 @@ function read_file(file){
     // Define Layout
     const layout = {
       xaxis: {range: mylen, title: "Dates"},
-      yaxis: {range: mylen, title: "PDI - PDO"},  
-      title: "PDI - PDO Fark Grafiği",
+      yaxis: {range: mylen, title: "PCN - PDO"},  
+      title: "PCN - PDO Fark Grafiği",
       paper_bgcolor: "lightblue", //background color of the chart container space
       plot_bgcolor: "lightyellow", //background color of plot area
     };
